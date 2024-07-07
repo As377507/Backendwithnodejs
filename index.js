@@ -47,8 +47,13 @@ app.get("/twitter", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
+    res.send("<h1> Please enter your details </h1>");
+});
+
+app.get("/home", (req, res) => {
     res.send("<h1> hello welcome to our channel</h1>");
 });
+
 
 app.get("/github", (req, res) => {
     res.json(gitData);
